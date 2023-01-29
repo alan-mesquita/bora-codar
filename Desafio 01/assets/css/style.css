@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #0F0D13;
+    --base-color: #2A2141;
+    --title: #E1E1E6;
+    --text: #C4C4CC;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--title);
+}
+
+.players {
+    display: grid;
+    grid-template-areas: 
+    'A B'
+    'A C';
+    gap: 32px;
+    justify-content: center;
+    margin: 60px auto;
+    height: 500px;
+}
+
+.player {
+    background: var(--base-color);
+    border-radius: 10px;
+}
+
+.cloak {
+    margin-bottom: 28px;
+}
+
+.heading {
+    margin-bottom: 28px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.67;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline {
+    background-color: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px;
+    height: 6px;
+    margin: 28px 0;
+}
+
+.durations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C4C4CC;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#player-2 .cloak,
+#player-3 .cloak {
+    width: 84px;
+}
+
+#player-1 {
+    grid-area: A;
+    border: 1px solid black;
+    padding: 38px;
+}
+
+#player-2 {
+    grid-area: B;
+    padding: 28px;
+    
+}
+
+.front{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+#player-3 {
+    grid-area: C;
+    padding: 28px;
+}
